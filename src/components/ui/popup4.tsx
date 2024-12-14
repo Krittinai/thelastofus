@@ -13,15 +13,15 @@ const images = [
 ]; // Array of crack images
 
 const texts =[
-  "อยากไปเที่ยวไหม",
-  "เอาสักหน่อย",
-  "เปิดเล่นเล่น",
+  "1",
+  "2",
+  "3",
 ]
 
 
 const maxCount = 20; 
 
-const Popup3: NextPage = () => {
+const Popup4: NextPage = () => {
   const [isShow, setIsShow] = useState(false);
   const [showPopup, setShowPopup] = useState(true);
   const [intensity, setIntensity] = useState(1); // Intensity level for scary effects
@@ -60,12 +60,12 @@ const Popup3: NextPage = () => {
       {showPopup && (
         <>
           {/* Background Image */}
-          <img
+          {/* <img
             src={images[imageIndex]}
             alt=""
             className="absolute top-0 left-0 w-full h-full object-cover z-0 "
           />
-          <div className="bg-black opacity-40 absolute h-full w-full z-10 blur-lg "/>
+          <div className="bg-black opacity-40 absolute h-full w-full z-10 blur-lg "/> */}
 
           {/* Popup */}
           <div
@@ -114,8 +114,7 @@ const Popup3: NextPage = () => {
                 marginBottom: "20px",
               }}
             >
-
-{texts[intensity]}
+              {texts[intensity]}
               {/* อยากไปเที่ยวไหม? */}
             </h1>
 
@@ -160,4 +159,4 @@ const Popup3: NextPage = () => {
   );
 };
 
-export default Popup3;
+export default Popup4;
